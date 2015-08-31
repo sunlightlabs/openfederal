@@ -1,0 +1,75 @@
+---
+- name: Site admin
+  hosts: openfederal-site
+  user: ubuntu
+  sudo: yes
+  tasks:
+    - name: Restart nginx
+      service: name=nginx state=restarted
+      tags:
+        - website-restart
+    - name: Restart django-application (uwsgi)
+      service: name=uwsgi state=restarted
+      tags:
+        - website-restart
+
+- name: Search admin
+  hosts: openfederal-search
+  user: ubuntu
+  sudo: yes
+  tasks:
+    # - name: Rebuild search index
+    #   service: name=nginx state=restarted
+    #   tags:
+    #     - search-rebuild
+    # - name: Restart django-application (uwsgi)
+    #   service: name=uwsgi state=restarted
+    #   tags:
+    #     - search-restart
+
+
+- name: taskqueue admin
+  hosts: openfederal-taskqueue
+  user: ubuntu
+  sudo: yes
+  tasks:
+  - name: Restart celery
+    service: name=celery-openfederal state=restarted
+    tags:
+      - taskqueue-restart
+
+- name: Project user niceties
+  hosts:
+    - openfederal-site
+    - openfederal-search
+  user: ubuntu
+  sudo: yes
+  vars:
+    project_name: openfederal
+  tasks:
+    - name: pip install ipython
+      pip: >
+        name=ipython
+        state=present
+        virtualenv=/projects/{{project_name}}/virt
+      environment: django_environment
+      tags:
+        - ipython-virtualenv
+    - name: install django-pdb
+      pip: name=django-pdb virtualenv=/projects/{{project_name}}/virt/
+      sudo_user: "{{project_name}}"
+      tags:
+        - debug-django
+    - name: install django-debug-toolbar
+      pip: name=django-debug-toolbar virtualenv=/projects/{{project_name}}/virt/
+      sudo_user: "{{project_name}}"
+      tags:
+        - debug-django
+    - name: set DEBUG env var in uwsgi
+      lineinfile: dest=/etc/uwsgi/apps-enabled/{{project_name}}.ini state=present insertafter=EOF line="env = DEBUG=True"
+      tags:
+        - debug-django
+    - name: set DEBUG env var for user
+      lineinfile: dest=/projects/{{project_name}}/env_vars state=present insertafter=EOF line="export DEBUG=True"
+      tags:
+        - debug-django

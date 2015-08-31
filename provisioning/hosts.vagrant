@@ -1,0 +1,4 @@
+openfederal-site        ansible_ssh_host=10.73.98.100 ansible_ssh_user=vagrant
+openfederal-db          ansible_ssh_host=10.73.98.101 ansible_ssh_user=vagrant
+openfederal-search      ansible_ssh_host=10.73.98.102 ansible_ssh_user=vagrant
+openfederal-taskqueue   ansible_ssh_host=10.73.98.103 ansible_ssh_user=vagrant

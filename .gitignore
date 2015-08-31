@@ -1,1 +1,31 @@
 .idea
+*.py
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Project stuff:
+.env
+sandbox/
+staticfiles/*
+!staticfiles/.gitkeep
+
+# vagrant
+.vagrant

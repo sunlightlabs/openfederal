@@ -1,0 +1,24 @@
+---
+- name: Set up taskqueue.openfederal
+  hosts: openfederal-taskqueue
+  user: ubuntu
+  sudo: yes
+  vars:
+    concurrency: 2
+    worker_nodes: 4
+    celeryd_max_tasks_per_child: 500
+  roles:
+    - role: common-roles/common
+      hostname: taskqueue.openfederal.org
+      extra_packages:
+        - libpq-dev
+    - role: redis-server
+      bind_external: true
+    - role: common-roles/django-celery
+      project_name: openfederal
+      python_version: 3
+      celerybeat_enabled: yes
+      git_repositories:
+          - repo: https://github.com/sunlightlabs/openfederal.git
+            dir: openfederal
+            version: HEAD
