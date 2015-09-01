@@ -5,5 +5,5 @@
 var gulp = require('gulp');
 
 gulp.task('default', function () {
-    gulp.start('watch');
+    gulp.start('watch', 'connect');
 });
