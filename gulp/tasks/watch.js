@@ -5,6 +5,6 @@
 var gulp = require('gulp');
 
 gulp.task('watch', function () {
-  gulp.watch('./app/static/js/*.js', ['buildJs']);
-  gulp.watch('./app/static/sass/**', ['buildCss']);
+  gulp.watch('./static/js/*.js', ['buildJs']);
+  gulp.watch('./static/sass/**', ['buildCss']);
 });
