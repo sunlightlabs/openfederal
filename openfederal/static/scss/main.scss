@@ -1,8 +1,6 @@
-$primary-color: #333;
+@import 'variables.scss';
 
 body {
-  height: 100%;
   width: 100%;
-  margin: 0;
-  color: $primary-color;
+  color: $white
 }

@@ -24,10 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', None)
+SECRET_KEY = os.getenv('SECRET_KEY', 'a-bad-secret')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 TEMPLATE_DEBUG = True if os.getenv('TEMPLATE_DEBUG', 'True') == 'True' else DEBUG
 
@@ -125,7 +125,7 @@ STATICFILES_FINDERS = settings.STATICFILES_FINDERS + (
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'openfederal/static'),
 )
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 if DEBUG:
