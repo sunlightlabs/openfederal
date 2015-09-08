@@ -1,5 +1,5 @@
 ---
-- name: Set up search.hallofjustice
+- name: Set up search.openfederal
   hosts: openfederal-search
   user: ubuntu
   sudo: yes

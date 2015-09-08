@@ -27,7 +27,7 @@ Vagrant.configure(2) do |config|
     taskqueue.vm.network "private_network", ip: "10.73.98.103"
     taskqueue.vm.synced_folder "./", "/projects/openfederal/src/openfederal"
     taskqueue.vm.provider "virtualbox" do |vb|
-      vb.name = "taskqueue.openfderal"
+      vb.name = "taskqueue.openfederal"
       vb.memory = 1024
       vb.cpus = 2
     end

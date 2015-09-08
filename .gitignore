@@ -1,6 +1,3 @@
-.idea
-*.py
-
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -29,3 +26,11 @@ staticfiles/*
 
 # vagrant
 .vagrant
+
+.idea/*
+*.pyc
+.env
+*.pid
+node_modules
+.project
+.DS_Store
