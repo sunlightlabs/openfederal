@@ -5,3 +5,19 @@
 body {
     background: #fff;	
 }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: proxima-nova, sans-serif;
+}
+
+h1{
+	font-size: 28px;
+	line-height: 38px;
+}
+
+.hero{
+    background-color: #fff;
+    height: 460px;
+    margin: 115px 200px 0 200px;
+    text-align: center;
+}
