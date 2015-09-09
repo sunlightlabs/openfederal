@@ -12,8 +12,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 p {
-	font-size: 16px;
-	line-height: 26px;
+	line-height: 28px;
 
 }
 
@@ -39,4 +38,8 @@ h2 {
 .tools {
 	background-color: #f5f5f5;
 	padding: 30px 100px 100px 100px;
+}
+
+.ind-tool {
+	padding-right: 80px;
 }
