@@ -45,6 +45,12 @@ h2 {
 	padding-right: 80px;
 }
 
+.about-sunlight {
+	background-color: #ffffff;
+	padding-bottom: 115px;
+
+}
+
  .btn-lg {
  	background-color: #f6c917;
     border-color: #f6c917;
@@ -61,10 +67,18 @@ h2 {
  }
 
  img.of-logo {
+ 	margin: 0 auto;
  	padding: 115px 0 35px 0;
     width: 372px;
     border-bottom: 1px solid #cccccc;
-    line-height: 22px;
     display: block;
-    margin: 0 auto;
+
+ }
+
+ img.sunlight-logo {
+ 	margin: 0 auto;
+ 	padding: 115px 0 35px 0;
+    width: 69px;
+    display: block;
+
  }
