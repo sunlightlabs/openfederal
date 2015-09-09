@@ -33,6 +33,7 @@ h2 {
 .hero {
     background-color: #fff;
     text-align: center;
+    padding-bottom: 115px;
 }
 
 .tools {
@@ -60,6 +61,10 @@ h2 {
  }
 
  img.of-logo {
- 	padding: 115px 0 0 0;
- 	width: 372px;
+ 	padding: 115px 0 35px 0;
+    width: 372px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 22px;
+    display: block;
+    margin: 0 auto;
  }
