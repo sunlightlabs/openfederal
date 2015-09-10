@@ -48,7 +48,7 @@ h2 {
 
 
 .ind-tool-no-logo {
-	padding-top: 71px;;
+	padding-top: 75px;
 }
 
 .about-sunlight {
@@ -74,6 +74,11 @@ h2 {
     border-color: #e2b423;
  }
 
+ button.btn.btn-primary.btn-lg.btn-block a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
  img.of-logo {
  	margin: 0 auto;
  	padding: 115px 0 35px 0;
@@ -97,9 +102,42 @@ h2 {
  }
 
  .tool-name {
- 	height: 100px;
+ 	height: 75px;
  }
 
  .gutter {
  	padding-right: 80px;
+ 	padding-bottom: 100px;
  }
+
+ .footer {
+    margin: 30px 0 0 0;
+    padding: 35px 0;
+    width: 100%;
+    background-color: #fcfcfc;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 5px solid #f6c917;
+}
+
+
+ /* Extra small devices (phones, less than 768px) */
+
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+
+
+
+	}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { 
+
+	}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+	}
