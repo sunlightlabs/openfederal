@@ -79,6 +79,11 @@ h2 {
     text-decoration: none;
 }
 
+.btn-primary:active {
+	background-color: #e2b423;
+
+}
+
  img.of-logo {
  	margin: 0 auto;
  	padding: 115px 0 35px 0;
@@ -127,6 +132,9 @@ h2 {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
+	.tools {
+    	padding: 30px;
+    }
 
 
 
@@ -134,10 +142,16 @@ h2 {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
+	.tools {
+    	padding: 30px;
+    }
 
 	}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
+	.tools {
+    	padding: 30px;
+    }
 
 	}
