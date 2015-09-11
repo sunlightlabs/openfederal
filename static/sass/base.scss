@@ -132,8 +132,8 @@ h2 {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-	.tools {
-    	padding: 30px;
+	section.tools {
+    	padding: 0px;
     }
 
 
@@ -142,7 +142,7 @@ h2 {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
-	.tools {
+	section.tools {
     	padding: 30px;
     }
 
@@ -150,8 +150,8 @@ h2 {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
-	.tools {
+	section.tools {
     	padding: 30px;
     }
 
-	}
+}
