@@ -132,8 +132,13 @@ h2 {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-	section.tools {
-    	padding: 0px;
+	.tools {
+        padding: 0px 30px 0 30px;
+    }
+
+    .about-sunlight {
+        padding: 0px 30px 0 30px;
+
     }
 
 
