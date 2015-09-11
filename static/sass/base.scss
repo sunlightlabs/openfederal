@@ -126,37 +126,31 @@ h2 {
 }
 
 
- /* Extra small devices (phones, less than 768px) */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
 
-/* No media query since this is the default in Bootstrap */
+}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) { 
-	.tools {
-        padding: 0px 30px 0 30px;
-    }
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
 
-    .about-sunlight {
-        padding: 0px 30px 0 30px;
+}
 
-    }
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
 
+}
 
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
 
-	}
+}
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) { 
-	section.tools {
-    	padding: 30px;
-    }
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
 
-	}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
-	section.tools {
-    	padding: 30px;
+    .tools {
+        padding: 0px 0px 0px 20px;
     }
 
 }
