@@ -1,0 +1,183 @@
+// Sample sass
+
+@import 'bootstrap_overrides';
+@import 'bootstrap';
+
+body {
+    background: #fff;	
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #323232;
+}
+
+p {
+	line-height: 28px;
+
+}
+
+h1 {
+	line-height: 38px;
+}
+
+h2 {
+	line-height: 30px;
+}
+
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.center {
+	text-align: center;
+	padding: 0 0 30px 0;
+
+}
+
+.hero {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 115px;
+}
+
+.tools {
+	background-color: #f5f5f5;
+	padding: 30px 100px 100px 100px;
+}
+
+
+.ind-tool-no-logo {
+	padding-top: 75px;
+}
+
+.about-sunlight {
+	background-color: #ffffff;
+	padding-bottom: 115px;
+
+}
+
+ .btn-lg {
+ 	background-color: #f6c917;
+    border-color: #f6c917;
+    border-radius: 0px;
+}
+
+.btn-primary {
+	border-color: #f6c917;
+	width: 40%;
+    margin: 0 auto;
+ }
+
+ .btn-primary:hover {
+ 	background-color: #e2b423;
+    border-color: #e2b423;
+ }
+
+ button.btn.btn-primary.btn-lg.btn-block a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-primary:active {
+	background-color: #e2b423;
+
+}
+
+ img.of-logo {
+ 	margin: 0 auto;
+ 	padding: 115px 0 35px 0;
+    width: 372px;
+    border-bottom: 1px solid #cccccc;
+    display: block;
+
+ }
+
+ img.sunlight-logo {
+ 	margin: 0 auto;
+ 	padding: 115px 0 15px 0;
+    width: 69px;
+    display: block;
+
+ }
+
+ h1.tool-text {
+ 	padding-bottom: 30px;
+
+ }
+
+ .tool-name {
+ 	height: 75px;
+ }
+
+ .gutter {
+ 	padding-right: 80px;
+ 	padding-bottom: 100px;
+ }
+
+ .footer {
+    margin: 30px 0 0 0;
+    padding: 35px 0;
+    width: 100%;
+    background-color: #fcfcfc;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 5px solid #f6c917;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 0 20px 0 20px;
+    }
+
+    img.of-logo {
+        width: 275px;
+        padding: 50px 0 30px 0;
+    }
+
+    .h1 {
+        padding-bottom: 30px;
+    }
+
+    .tools {
+        padding: 0px 0px 0px 20px;
+        margin-top: 50px;
+    }
+
+    .tool-name {
+        padding-top: 10px;
+    }
+
+    .gutter {
+        padding: 0px 20px 40px 20px;
+
+    }
+
+    .ind-tool-no-logo {
+        padding: 0px;
+    }
+
+}
